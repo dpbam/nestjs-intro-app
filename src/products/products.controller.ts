@@ -15,6 +15,6 @@ export class ProductsController {
       prodDescription,
       prodPrice,
     );
-    return { id: generatedId }
+    return { id: generatedId };
   }
 }
