@@ -7,9 +7,10 @@ import { ProductsModule } from "./products/products.module";
 @Module({
   imports: [
     ProductsModule,
-    MongooseModule.forRoot(
-      "mongodb+srv://thederekphelps:f1ddl35t1ck5!@cluster0.kbze5.mongodb.net/nestjs-demo?retryWrites=true&w=majority"
-    ),
+    MongooseModule
+      .forRoot
+      // "mongodb+srv://thederekphelps:f1ddl35t1ck5!@cluster0.kbze5.mongodb.net/nestjs-demo?retryWrites=true&w=majority"
+      (),
   ],
   controllers: [AppController],
   providers: [AppService],
