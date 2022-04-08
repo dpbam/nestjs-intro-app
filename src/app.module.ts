@@ -8,7 +8,8 @@ import { ProductsModule } from './products/products.module';
   imports: [
     ProductsModule,
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PWD}@cluster0.kbze5.mongodb.net/nestjs-demo?retryWrites=true&w=majority`
+      'mongodb://localhost:27017/nestjs-demo'
+      // `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PWD}@cluster0.kbze5.mongodb.net/nestjsdemo?retryWrites=true&w=majority`
     ),
   ],
   controllers: [AppController],
